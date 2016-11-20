@@ -1,0 +1,394 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  min-width: 500px;
+}
+
+div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a {
+  font-size: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Montserrat",sans-serif;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  color: #333;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  z-index: 9001;
+  transition: 100ms;
+  transform: translateZ(0);
+}
+.dark {
+  background-color: #333;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.image {
+  margin: 0 auto;
+  height: 400px;
+  width: 100%;
+  max-width: 1920px;
+  background: url("../images/harold.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
+  text-align: center;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg,rgba(37, 37, 37, 0.7),transparent 20%);
+}
+.article-title {
+  position: relative;
+  height: 200px;
+  width: 550px;
+  top: 80%;
+  left: calc(50% - 275px);
+  right: calc(50% - 275px);
+  bottom: 0;
+  padding: 30px;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 35px;
+  background-color: #333;
+  color: WHITE;
+  z-index: 2;
+}
+.article-author {
+  margin-top: 20px;
+  height: 35px;
+}
+.article-author:hover h3 {
+  color: #aaa;
+}
+.article-author h3 {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: super;
+  color: #ccc;
+  transition: color 200ms;
+}
+.article-author img {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.container {
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 150px;
+  width: auto;
+  max-width: 700px;
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 40px;
+}
+.container h2 {
+  font-size: 19px;
+  text-align: justify;
+}
+.img-container .socal-icons {
+  margin: 20px;
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  background: url("../images/image_socal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 20px;
+  cursor: pointer;
+}
+.container img {
+  display: block;
+  width: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.container .other-container {
+  cursor: pointer;
+}
+.container .other-container:after {
+  content: "AD";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 40px;
+  width: 35px;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.container .page-button {
+  display: block;
+  width: 160px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #333;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  color: #333;
+  transition: background-color 200ms, color 200ms;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.page-button:hover {
+  background-color: #333;
+  color: white;
+}
+.footer {
+  height: 100px;
+  font-family: "Roboto Mono", sans-serif;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  line-height: 100px;
+}
+.first-popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,255,0.2);
+  font-family: "Montserrat", sans-serif;
+  z-index: 420;
+  // XD
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.first-popup-block {
+  position: absolute;
+  height: 250px;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #222;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  display: block;
+  right: 20px;
+}
+.first-popup-block h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  color: white;
+}
+.first-popup-block input {
+  display: inline-block;
+  padding: 10px;
+  background-color: #666;
+  border: none;
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+}
+.first-popup-block input[type="email"] {
+  height: 30px;
+  width: 70%;
+}
+.first-popup-block input[type="button"] {
+  margin-left: -5px;
+  height: 50px;
+  background-color: #666;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+.second-popup {
+  padding: 20px;
+  padding-top: 20px;
+  position: fixed;
+  height: 200px;
+  width: 500px;
+  bottom: 25px;
+  left: calc(50% - 250px);
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #333;
+  color: white;
+  transition: bottom 300ms;
+}
+.second-popup h2 {
+  font-size: 28px;
+  text-align: left;
+}
+.second-popup h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.second-popup input {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  width: calc(50% - 40px);
+  border: 0;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 24px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  float: left;
+  transition: background-color 200ms;
+}
+.second-popup input:hover {
+  background-color: #555;
+}
+.socal-sidebar {
+  position: fixed;
+  height: 300px;
+  width: 50px;
+  top: calc(50% - 150px);
+  background: url("../images/image_socal_sidebar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 300ms;
+}
+.spon-message {
+  height: 800px;
+  padding-top: 300px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+.woah {
+  min-height: 6000px;
+  background: url(../images/def-not-ripped-off-the-million-dollar-website-page.png);
+  background-color: #ccc;
+  cursor: pointer;
+}
+.next-page-content {
+  height: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 150px;
+  width: auto;
+  max-width: 700px;
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 40px;
+}
+.next-page-content h2 {
+  font-size: 19px;
+  text-align: justify;
+}
+.next-page-content img {
+  display: block;
+  width: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.left-sidebar {
+  left: 10px;
+}
+.right-sidebar {
+  right: 10px;
+}
+.close {
+  height: 25px;
+  width: 25px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAYFBMVEUAAAB5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXnTWhg6AAAAH3RSTlMAAQcICQoMICUmLFlbXF5fYWJni52eoKOlptfe9fn9V8PhdwAAAQFJREFUSImN1dkSgjAMheFUccENccM97/+WWsDaNTlctRffDMMkP0Tfp5oS9Czcafa4Q2bHWyeYEbNj5o0TiLGCee2EbgbRm+N4VMxP8GtO5oaYxgn71RATCsTEQjep0ExOyGafFZIpibIpi5KRRN7IImdaRaRGF7FBRGAqTPjmCQrfoCIxgIgMJAIDCqKDIw+wia33YlgTfYGZUCAmFrr5T8kK6ls4iVgTw0lETDy7ukmnXTO5/TBXyeQ3SjKlHSyb8taWjLTneSOXwXSp0VqSGqCJkYGaGJj8P0owE6rfgPDMydBo9CYO5mzsxRqkidZczHCp31gTOyeIlmATm158ABLxYq/PITDxAAAAAElFTkSuQmCC");
+  background-size: contain;
+  cursor: pointer;
+}
+.arrow-down {
+  display: inline-block;
+  margin-top: 30px;
+  height: 50px;
+  width: 50px;
+  background:
+  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAQIDCAsMDhASEzg7PE5QZG+FhoiJi4ydnqXZ5Ont/RciaMsAAACiSURBVEiJ7ctHDsMwDERROr333jz3P2WQKDJoq43W0V+RBJ9I6b+b3DbUX7W9Ds00ewFnRlyAx8gK4EQJY3pPgDFGAPdKBgBjrEDdF1kxphGYf9a13Y6EWJpD0jhCmQMrEsYroiYgIiYolNmzImCiwmsSQpkdKxxDiI6hRMuQQhtWKEMLxxCiYyjRMqRQhhaNyRA/kyW+ZpEnRKbjXFEqeXsDZkozHmVn2gcAAAAASUVORK5CYII=");
+  background-size: contain;
+}
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+.stuff {
+  visibility: hidden;
+  position: fixed;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+#moneyBlock {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  height: 150px;
+  width: 210px;
+  background-color: white;
+  font-family: "Roboto Mono", sans-serif;
+  text-align: right;
+}
+#moneyBlock h1 {
+  font-size: 25px;
+}
+#moneyBlock h2 {
+  font-size: 20px;
+}
+@media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+  .image {
+    height: 250px;
+  }
+  .article-title {
+    left: 0;
+    right: 0;
+    min-height: 150px;
+    height: auto;
+    width: 100%;
+    font-size: 30px;
+  }
+  .container {
+    padding-top: 200px;
+  }
+  .container img {
+    width: 100%;
+  }
+}

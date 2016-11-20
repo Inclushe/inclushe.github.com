@@ -1,0 +1,13 @@
+to do
+- justify css
+O do you like this website? yes or no
+O add second popup when .getBoundingClientRect() of #2 is <= 0
+- popups every second on left to right sides
+- make twitter intent url
+- click on ad to hide
+- PRESS HERE YOU DUMB FUCK
+- show #4 just before "crash"
+- if >= 20 popups show "crash"
+- remove all html and just show "crash" image and <!--you dun fucked up-->
+
+NEW ISSUES:

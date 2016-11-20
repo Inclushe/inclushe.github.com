@@ -1,0 +1,20 @@
+We apologize for the inconvenience, but Windows did not start successfully.  A
+recent hardware or software change might have caused this.
+
+If your computer stopped responding, restarted unexpectedly, or was
+automatically shut down to protect your files and folders, choose Last Known
+Good Configuration to revert to the most recent settings that worked.
+
+If a previous startup attempt was interrupted due to a power failure or because
+the Power or Reset button was pressed, or if you aren't sure what caused the
+problem, choose Start Windows Normally.
+
+    Safe Mode
+    Safe Mode with Networking
+    Safe Mode with Command Prompt
+
+    Last Known Good Configuration (your most recent settings that worked)
+
+    Start Windows Normally
+
+Use the up and down arrow keys to move the highlight to your choice.

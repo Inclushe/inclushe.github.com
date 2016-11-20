@@ -1,0 +1,39 @@
+{
+    "project": [
+        {
+            "title": "Clickbeeps",
+            "description": "A parody of clickbait-oriented websites.",
+            "color": "#db3015",
+            "image": "images/clickbeeps.jpg",
+            "link": "/clickbeeps"
+        },
+        {
+            "title": "Data to Colors",
+            "description": "Decode and encode data into an image.",
+            "color": "#004d40",
+            "image": "images/datatocolors.png",
+            "link": "https://d2co.github.io/"
+        },
+        {
+            "title": "Deckheart",
+            "description": "A lightweight and much-needed visual improvement to Tweetdeck.",
+            "color": "#3f4fff",
+            "image": "images/deckheart.jpg",
+            "link": "/deckheart"
+        },
+        {
+            "title": "Youtube Hide UI",
+            "description": "Hides Youtube's player interface even while paused. Requires a userscript extension.",
+            "color": "#ef2f2f",
+            "image": "images/hideui.jpg",
+            "link": "/yt-hide-ui"
+        },
+        {
+            "title": "Codepen",
+            "description": "Various HTML and CSS bits I've made some years ago.",
+            "color": "#2a2a2a",
+            "image": "images/codepen.jpg",
+            "link": "http://codepen.io/inclushe/"
+        }
+    ]
+}
