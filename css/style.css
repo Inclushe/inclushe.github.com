@@ -128,6 +128,7 @@ div {
 }
 #preview {
   position: fixed;
+  background: #19193a;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,6 +137,7 @@ div {
   margin-left: 482px;
   z-index: 99;
   transition: background-image 100ms, background-color 100ms;
+  color: white;
 }
 #preview:after {
   content: "";

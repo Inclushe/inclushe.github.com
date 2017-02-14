@@ -36,13 +36,6 @@
       "link": "/deckheart"
     },
     {
-      "title": "Youtube Hide UI",
-      "description": "Hides Youtube's player interface even while paused. Requires a userscript extension.",
-      "color": "#EF2F2F",
-      "image": "images/hideui.jpg",
-      "link": "/yt-hide-ui"
-    },
-    {
       "title": "Codepen",
       "description": "Various HTML and CSS bits I've made some years ago.",
       "color": "#2A2A2A",
