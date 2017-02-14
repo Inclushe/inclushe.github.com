@@ -40,7 +40,7 @@ var doEverything = function(){
 };
 loadImages();
 
-preview.setAttribute("style", "background-image: url('" + item[0].getAttribute("data-url") +"'); background-color: "+item[0].getAttribute("data-color")+";");
+preview.setAttribute("style", "background-image: url('" + item[0].getAttribute("data-url") +"');");
 item[0].setAttribute("style", "background-color: "+item[0].getAttribute("data-color")+"; color: white;");
 var getColor = function(){
   preview.removeAttribute("style");
@@ -49,7 +49,7 @@ var getColor = function(){
     item[f].className = "item";
     var imageURL = this.getAttribute("data-url");
     var colorData = this.getAttribute("data-color");
-    preview.setAttribute("style", "background-image: url('" + imageURL +"'); background-color: "+colorData+";");
+    preview.setAttribute("style", "background-image: url('" + imageURL +"');");
     this.setAttribute("style","background-color: "+colorData+";");
     this.className = "item hover";
   }

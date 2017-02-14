@@ -1,15 +1,10 @@
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(../fonts/roboto_mono.woff) format('woff');
-}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
   margin: 0;
   padding: 0;
   background-color: #19193a;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: 'Inconsolata', monospace;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
   min-width: 356px;
@@ -42,7 +37,6 @@ div {
 .header {
   position: fixed;
   height: 60px;
-  //width: 100%;
   top: 0;
   left: 0;
   background-color: #19193a;
@@ -115,17 +109,17 @@ div {
   overflow: hidden;
   transition: 300ms line-height ease-out, 300ms height ease-out;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 #drop a {
   -webkit-user-select: text;
+  user-select: text;
 }
 
 .projects {
   margin-top: 415px;
-  //height: 337.5px;
   width: 720px;
-  //background-color: #acc;
   float: right;
   display: flex;
   justify-content: center;

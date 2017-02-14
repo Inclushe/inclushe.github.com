@@ -1,39 +1,53 @@
 {
-    "project": [
-        {
-            "title": "Clickbeeps",
-            "description": "A parody of clickbait-oriented websites.",
-            "color": "#db3015",
-            "image": "images/clickbeeps.jpg",
-            "link": "/clickbeeps"
-        },
-        {
-            "title": "Data to Colors",
-            "description": "Decode and encode data into an image.",
-            "color": "#004d40",
-            "image": "images/datatocolors.png",
-            "link": "https://d2co.github.io/"
-        },
-        {
-            "title": "Deckheart",
-            "description": "A lightweight and much-needed visual improvement to Tweetdeck.",
-            "color": "#3f4fff",
-            "image": "images/deckheart.jpg",
-            "link": "/deckheart"
-        },
-        {
-            "title": "Youtube Hide UI",
-            "description": "Hides Youtube's player interface even while paused. Requires a userscript extension.",
-            "color": "#ef2f2f",
-            "image": "images/hideui.jpg",
-            "link": "/yt-hide-ui"
-        },
-        {
-            "title": "Codepen",
-            "description": "Various HTML and CSS bits I've made some years ago.",
-            "color": "#2a2a2a",
-            "image": "images/codepen.jpg",
-            "link": "http://codepen.io/inclushe/"
-        }
-    ]
+  "project": [
+    {
+      "title": "Minesweeper",
+      "description": "The classic game of mining and sweeping, recreated by me. :)",
+      "color": "#F44336",
+      "image": "images/minesweeper.png",
+      "link": "https://github.com/Inclushe/js-minesweeper"
+    },
+    {
+      "title": "Broke",
+      "description": "Looks like your motherboard puked onto your monitor.",
+      "color": "#00FF00",
+      "image": "images/broke.png",
+      "link": "/broke"
+    },
+    {
+      "title": "Clickbeeps",
+      "description": "A parody of clickbait-oriented websites.",
+      "color": "#DB3015",
+      "image": "images/clickbeeps.jpg",
+      "link": "/clickbeeps"
+    },
+    {
+      "title": "Data to Colors",
+      "description": "Decode and encode data into a PNG.",
+      "color": "#004D40",
+      "image": "images/datatocolors.png",
+      "link": "https://d2co.github.io/"
+    },
+    {
+      "title": "Deckheart",
+      "description": "A lightweight and much-needed visual improvement to Tweetdeck.",
+      "color": "#3F4FFF",
+      "image": "images/deckheart.jpg",
+      "link": "/deckheart"
+    },
+    {
+      "title": "Youtube Hide UI",
+      "description": "Hides Youtube's player interface even while paused. Requires a userscript extension.",
+      "color": "#EF2F2F",
+      "image": "images/hideui.jpg",
+      "link": "/yt-hide-ui"
+    },
+    {
+      "title": "Codepen",
+      "description": "Various HTML and CSS bits I've made some years ago.",
+      "color": "#2A2A2A",
+      "image": "images/codepen.jpg",
+      "link": "http://codepen.io/inclushe/"
+    }
+  ]
 }
