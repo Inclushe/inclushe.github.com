@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #19193a;
+  color: black;
   font-family: 'Inconsolata', monospace;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
