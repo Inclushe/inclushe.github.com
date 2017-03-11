@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #080902;
+  font-family: 'Overpass Mono', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+div.investigating-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+div.investigating-container video#investigating {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.element-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#navbar svg {
+  padding: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#navbar svg rect, #navbar svg path {
+  fill: #C39E3A;
+}
+
+#url-bar {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#url-bar * {
+  height: 100%;
+}
+
+#url-bar input {
+  width: 80%;
+  padding: 20px;
+}
+
+#url-bar button {
+  margin-left: -10px;
+  width: 20%;
+}
+
+#element {
+  position: absolute;
+  margin: 10px;
+  padding: 20px 10px;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  width: 600px;
+  border-radius: 5px;
+  user-select: none;
+}
+
+#element.viewing * {
+  cursor: pointer;
+}
+
+#element.viewing #navbar,
+#element.viewing #dialog {
+  display: none;
+}
+
+#element.editing {
+  background: #eee;
+  user-select: initial;
+}
+
+#element.editing #textbox {
+  background: #ddd;
+}
+
+#element.editing #edit-prompt {
+  display: none;
+}
+
+#dialog {
+  font-size: 16px;
+  padding: 20px;
+  color: black;
+}
+
+#textbox {
+  color: #C39E3A;
+  font-size: 50px;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: right;
+  text-shadow: -0.5px -0.5px black, -0.5px 0px black, -0.5px 0.5px black, 0px -0.5px black, 0px 0px black, 0px 0.5px black, 0.5px -0.5px black, 0.5px 0px black, 0.5px 0.5px black, -0.5px -0.5px black, -0.5px 0px black, -0.5px 0.5px black, 0px -0.5px black, 0px 0px black, 0px 0.5px black, 0.5px -0.5px black, 0.5px 0px black, 0.5px 0.5px black;
+}
+
+@supports (text-stroke: 0.5px black) or (-webkit-text-stroke: 0.5px black) {
+  #textbox {
+    text-shadow: none;
+    -webkit-text-stroke: 0.5px black;
+    text-stroke: 0.5px black;
+  }
+}
+
+#edit-prompt {
+  color: rgba(255, 255, 255, 0.2);
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  #element {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  #element {
+    width: 100%;
+  }
+  #textbox {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  #textbox {
+    font-size: 26px;
+  }
+}

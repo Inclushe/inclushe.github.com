@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+The Eric Andre Show is © of Turner Broadcasting.
+Lawyers, please email me at inclushe@gmail.com and I'll remove it.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@inclushe">
+    <meta name="twitter:title" content="🔍 Investigation Generator">
+    <meta name="twitter:description" content="Investigate.">
+    <meta name="twitter:image" content="https://inclushe.com/investigate/assets/images/twitter-card.png">
+    <title>🔍 Investigating...</title>
+  </head>
+  <body>
+    <div class="investigating-container">
+      <video id="investigating" autoplay muted loop>
+        <source src="assets/videos/investigating.webm" type="video/webm">
+        <source src="assets/videos/investigating.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container element-container">
+      <div class="viewing" id="element">
+        <nav id="navbar">
+          <svg id="share-icon" viewBox="0 0 24 24">
+            <path fill="#000000" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"></path>
+          </svg>
+          <svg id="info" viewBox="0 0 24 24">
+            <path fill="#000000" d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
+          </svg><a href="https://inclushe.com">
+            <svg id="logo" viewBox="0 0 93.749999 93.749999">
+              <g id="layer1" transform="matrix(0.87982521,0,0,0.87982521,-0.08714583,-826.73156)">
+                <rect id="rect4501" width="63.933151" height="18.455912" x="577.76172" y="1103.4753" ry="1.4917736" transform="matrix(1,0,-0.5,0.8660254,0,0)"></rect>
+                <rect id="rect4507" width="63.933151" height="18.455912" x="611.59753" y="1171.147" ry="1.4917736" transform="matrix(1,0,-0.5,0.8660254,0,0)"></rect>
+                <rect id="rect4509" width="31.966576" height="18.455912" x="610.6629" y="1137.3112" ry="1.4917736" transform="matrix(1,0,-0.5,0.8660254,0,0)"></rect>
+              </g>
+            </svg></a>
+          <svg id="exit" viewBox="0 0 24 24">
+            <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+          </svg>
+        </nav>
+        <div class="hidden" id="dialog">
+          <div class="hidden" id="url-bar">
+            <input id="url" value="https://test.com/?message=test">
+            <button id="url-button" data-clipboard-target="#url">COPY</button>
+          </div>
+          <div class="hidden" id="notice">
+            The Eric Andre Show is © of Turner Broadcasting.
+            Lawyers, please email me at inclushe@gmail.com and I'll remove it.
+          </div>
+        </div>
+        <div id="textbox" contenteditable spellcheck="false">INVESTIGATING 311</div>
+        <div id="edit-prompt">tap to edit</div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script>new Clipboard('#url-button')</script>
+  </body>
+</html>
