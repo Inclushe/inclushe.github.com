@@ -21,7 +21,7 @@ div.investigating-container {
   width: 100%;
 }
 
-div.investigating-container video#investigating {
+div.investigating-container #investigating {
   display: block;
   margin: 0 auto;
   height: 100%;

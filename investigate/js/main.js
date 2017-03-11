@@ -3,7 +3,28 @@
 var element = document.querySelector('#element')
 var textbox = document.querySelector('#textbox')
 var urlTextbox = document.querySelector('#url')
-var refitVideo = require('./refitVideo.js')
+var video = {
+  containerElement: document.querySelector('.investigating-container'),
+  element: document.querySelector('#investigating'),
+  pointOfInterest: 640 / 1280
+}
+
+function refitVideo () {
+  if (window.innerWidth < video.element.clientWidth) {
+    var pointOnElement = (video.pointOfInterest * video.element.clientWidth)
+    var marginAmount = (pointOnElement - (window.innerWidth / 2))
+    if (marginAmount < 0) {
+      video.element.removeAttribute('style')
+    } else if (video.element.clientWidth - marginAmount < window.innerWidth) {
+      video.element.style.marginLeft =
+        -(video.element.clientWidth - window.innerWidth) + 'px'
+    } else {
+      video.element.style.marginLeft = -marginAmount + 'px'
+    }
+  } else {
+    video.element.removeAttribute('style')
+  }
+}
 var refitTextbox = require('./refitTextbox.js')
 var resetDialog = require('./resetDialog.js')
 
@@ -62,7 +83,17 @@ document.querySelector('#exit').addEventListener('click', function () {
   element.classList.toggle('editing')
 })
 
-},{"./refitTextbox.js":2,"./refitVideo.js":3,"./resetDialog.js":4}],2:[function(require,module,exports){
+window.setTimeout(function () {
+  if (document.querySelector('#investigating').paused) {
+    console.dir(document.querySelector('#investigating'))
+    document.querySelector('#investigating').outerHTML =
+      '<img id="investigating" src="assets/videos/investigating.gif" height="720" width="1280">'
+    video.element = document.querySelector('#investigating')
+    refitVideo()
+  }
+}, 500)
+
+},{"./refitTextbox.js":2,"./resetDialog.js":3}],2:[function(require,module,exports){
 module.exports = function () {
   window.setTimeout(function () {
     var textbox = document.querySelector('#textbox')
@@ -79,29 +110,6 @@ module.exports = function () {
 }
 
 },{}],3:[function(require,module,exports){
-var video = {
-  containerElement: document.querySelector('.investigating-container'),
-  element: document.querySelector('#investigating'),
-  pointOfInterest: 640 / 1280
-}
-
-module.exports = function () {
-  if (window.innerWidth < video.element.clientWidth) {
-    var pointOnElement = (video.pointOfInterest * video.element.clientWidth)
-    var marginAmount = (pointOnElement - (window.innerWidth / 2))
-    if (marginAmount < 0) {
-      video.element.removeAttribute('style')
-    } else if (video.element.clientWidth - marginAmount < window.innerWidth) {
-      video.element.style.marginLeft =
-        -(video.element.clientWidth - window.innerWidth) + 'px'
-    } else {
-      video.element.style.marginLeft = -marginAmount + 'px'
-    }
-  } else {
-    video.element.removeAttribute('style')
-  }
-}
-},{}],4:[function(require,module,exports){
 module.exports = function () {
   document.querySelector('#dialog').classList.remove('hidden')
   Array.from(document.querySelectorAll('#dialog > div')).forEach(function (el) {
