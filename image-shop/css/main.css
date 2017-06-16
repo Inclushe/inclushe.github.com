@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Arvo', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#product_dialog {
+  height: 128px;
+  width: 544px;
+  margin-top: 32px;
+  padding: 32px;
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.2);
+  color: #222;
+}
+#product_dialog .title {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+#product_dialog .title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+#product_dialog .price {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product_dialog .price h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+#product_dialog .add_cart {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product_dialog .add_cart svg {
+  height: 38px;
+  width: 38px;
+}
+#product_dialog .add_cart svg path {
+  fill: #222;
+}
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#clipping_container {
+  height: 600px;
+  width: 600px;
+  background: #ba366f;
+}
+#clipping_container svg {
+  position: absolute;
+  display: block;
+  height: 600px;
+  width: 600px;
+}
+#clipping_container #grid {
+  z-index: 2;
+}
+#clipping_container #hover {
+  z-index: 3;
+}
+#clipping_container #hover g path {
+  fill: transparent;
+  cursor: pointer;
+  z-index: 4;
+  transition: 100ms;
+}
+#clipping_container img#main {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  height: 600px;
+  width: 600px;
+}
+.active {
+  stroke: #000 !important;
+  stroke-width: 2px !important;
+}

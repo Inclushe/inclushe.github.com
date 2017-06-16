@@ -1,0 +1,30 @@
+{
+  "highlighter": {
+    "title": "SHARPIE HIGHLIGHTER",
+    "price": "$10"
+  },
+  "pen": {
+    "title": "UNIBALL SIGNO ULTRA MICRO 207 PEN",
+    "price": "$8"
+  },
+  "pencils": {
+    "title": "TICONDEROGA PENCILS",
+    "price": "$2.49"
+  },
+  "graph_paper": {
+    "title": "GRAPH PAPER",
+    "price": "$7"
+  },
+  "pencil_sharpener": {
+    "title": "WESTCOTT PENCIL SHARPENER",
+    "price": "$20"
+  },
+  "earbuds": {
+    "title": "PANASONIC RP-HJE120-D EARBUDS",
+    "price": "$7"
+  },
+  "post_its": {
+    "title": "POST-ITS",
+    "price": "$2.50"
+  }
+}
