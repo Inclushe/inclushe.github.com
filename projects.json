@@ -10,7 +10,7 @@
     {
       "title": "Broke",
       "description": "Looks like your motherboard puked onto your monitor.",
-      "color": "#00FF00",
+      "color": "#00C100",
       "image": "images/broke.png",
       "link": "/broke"
     },
