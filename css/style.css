@@ -156,7 +156,7 @@ div {
 .item {
   border-radius: 8px;
   height: 150px;
-  background-color: #eee;
+  background-color: #FFF;
   margin: 2px;
   padding: 1em;
   transition: 50ms background-color linear, 50ms color linear, 0ms box-shadow;
