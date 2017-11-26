@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #19193a;
+  background-color: #1942F4;
   color: black;
   font-family: 'Inconsolata', monospace;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -40,7 +40,7 @@ div {
   height: 60px;
   top: 0;
   left: 0;
-  background-color: #19193a;
+  background-color: #1942F4;
   z-index: 999;
 }
 
@@ -105,7 +105,7 @@ div {
 #drop {
   height: 0;
   font-size: 22px;
-  background-color: #17172c;
+  background-color: #1a35ab;
   line-height: 0px;
   overflow: hidden;
   transition: 300ms line-height ease-out, 300ms height ease-out;
@@ -129,7 +129,7 @@ div {
 }
 #preview {
   position: fixed;
-  background: #19193a;
+  background: #1942F4;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ div {
   bottom: -10px;
   height: 10px;
   width: 100%;
-  background: linear-gradient(0deg, transparent, #19193a);
+  background: linear-gradient(0deg, transparent, #1942F4);
 }
 .link-block {
   position: relative;
