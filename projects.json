@@ -29,13 +29,6 @@
       "link": "https://d2co.github.io/"
     },
     {
-      "title": "Deckheart",
-      "description": "A lightweight and much-needed visual improvement to Tweetdeck.",
-      "color": "#3F4FFF",
-      "image": "images/deckheart.jpg",
-      "link": "/deckheart"
-    },
-    {
       "title": "Codepen",
       "description": "Various HTML and CSS bits I've made some years ago.",
       "color": "#2A2A2A",
